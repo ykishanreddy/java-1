@@ -6,4 +6,7 @@
     copy: 
       src: target/CounterWebApp.war 
       dest: /usr/share/tomcat/webapps
+      owner: root
+      group: root
+      mode: '0644'
 
