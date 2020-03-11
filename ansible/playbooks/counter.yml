@@ -1,10 +1,10 @@
 ---
 - hosts: tomcat
-  become: true
+  #become: yes
   tasks:
   - name: deploy war file to tomcat
     copy: 
-      src: target/CounterWebApp.war 
+      src: /var/lib/jenkins/workspace/Deploy2tomcat/target/CounterWebApp.war 
       dest: /usr/share/tomcat/webapps
       owner: root
       group: root
